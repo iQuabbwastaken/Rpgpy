@@ -1,7 +1,3 @@
-import random
-from calendar import error
-
-
 def main():
 	launch()
 
@@ -32,6 +28,6 @@ def createPlayerFile():
 		pd.write("playerName= "+playerName+ "DO NOT CHANGE, THIS WILL BREAK YOUR CHARACTER! \n")
 
 	with open("Players.txt", "a") as plrs:
-		plrs.write(playerName + "\n")
+		plrs.writelines(playerName + "\n")
 
 main()
